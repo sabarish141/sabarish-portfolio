@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Sabarish Suresh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="noise-bg"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">Sabarish Suresh</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article class="blog-post-page">
+        <div class="container">
+          <a href="index.html#blog" class="blog-back-link">
+            <span class="back-arrow">←</span> Back to Blog
+          </a>
+          
+          <div class="blog-post-header">
+            <div class="blog-post-meta">
+              <span class="blog-post-category" id="blog-category"></span>
+              <span class="blog-post-date" id="blog-date"></span>
+              <span class="blog-post-read-time" id="blog-read-time"></span>
+            </div>
+            <h1 class="blog-post-title" id="blog-title"></h1>
+            <div class="blog-post-image-large" id="blog-image"></div>
+          </div>
+
+          <div class="blog-post-content" id="blog-content">
+            <!-- Content will be loaded dynamically -->
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Sabarish Suresh</span>
+        <span class="footer-dot">•</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
+
